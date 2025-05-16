@@ -38,5 +38,3 @@ A modern full-stack web application for efficient file management and processing
 - Multer for file handling
 - CORS enabled
 - Environment configuration with dotenv
-
-## 🏗️ Project Structure
