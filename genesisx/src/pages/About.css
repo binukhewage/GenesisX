@@ -1,0 +1,124 @@
+/* About Page Styles */
+.about-page {
+    padding-top: 100px; /* Space for fixed navbar */
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+}
+
+.about-section {
+    padding: 6rem 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--elegant-black);
+}
+
+.text-gradient {
+    background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-description {
+    font-size: 1.1rem;
+    color: var(--gray);
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 4rem;
+    line-height: 1.8;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+
+.feature-cards {
+    background: white;
+    border-radius: 16px;
+    padding: 2.5rem;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icons {
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.feature-cards h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--dark);
+    font-weight: 600;
+}
+
+.feature-cards p {
+    color: var(--gray);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.mission-section {
+    background: white;
+    border-radius: 16px;
+    padding: 3rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.mission-title {
+    font-size: 1.5rem;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.mission-text {
+    color: var(--gray);
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .about-section {
+        padding: 4rem 0;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .feature-card {
+        padding: 2rem;
+    }
+    
+    .mission-section {
+        padding: 2rem;
+    }
+}
